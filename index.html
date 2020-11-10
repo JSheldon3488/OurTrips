@@ -14,16 +14,36 @@
 </head>
 
 <body>
-    <header>
-        <div></div>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <p> This is where the header content will go!</p>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <div id="vmap"></div>
-    </div>
 
     <div class="container">
-        <div id="vmap_world"></div>
+        <!-- About Us Section -->
+
+        <!-- Visited Stats Section -->
+
+        <!-- Maps Section -->
+        <div class="row">
+            <div class="col-12">
+                <div id="vmap_world"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <div id="vmap"></div>
+            </div>
+        </div>
+    
     </div>
+
+
+
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="maps/jquery.vmap.js"></script>
@@ -35,7 +55,7 @@
             map: 'usa_en',
             backgroundColor: '#2980b9',
             color: '#ffffff',
-            enableZoom: true,
+            enableZoom: null,
             showTooltip: true,
             selectedColor: null,
             hoverColor: null,
@@ -57,8 +77,13 @@
             map: 'world_en',
             backgroundColor: '#2980b9',
             color: '#ffffff',
+            enableZoom: null,
         });
     </script>
-    
+
+    <!-- BootStrap Scripts -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> <!-- TODO: Check if need both jquery -->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
