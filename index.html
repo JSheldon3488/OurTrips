@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    
     <link rel="stylesheet" href="maps/jqvmap.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
@@ -26,15 +25,15 @@
     <div class="container">
         <!-- About Us Section -->
         <div class="row">
-            <h2>About Us</h2>
+            <h2 class="col 12">About Us</h2>
         </div>
 
         <!-- Visited Stats Section -->
-        <div class="row">
+        <div class="row col-stats">
             <h2 class="col-12">Togeter we visited...</h2>
-            <p class="col-12 col-md-4">X Countries</p>
-            <p class="col-12 col-md-4">X States</p>
-            <p class="col-12 col-md-4">X National Parks</p>
+            <p class="col-12 col-md-4">4 Countries</p>
+            <p class="col-12 col-md-4">13 States</p>
+            <p class="col-12 col-md-4">6 National Parks</p>
         </div>
 
         <!-- Maps Section -->
@@ -69,7 +68,7 @@
 
 
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="maps/jquery.vmap.js"></script>
     
     <!-- US Map Script -->
@@ -77,16 +76,25 @@
     <script>
         jQuery('#vmap').vectorMap({
             map: 'usa_en',
-            backgroundColor: '#2980b9',
-            color: '#ffffff',
+            backgroundColor: '#ffffff',
+            color: '#ddbea9',
             enableZoom: null,
             showTooltip: true,
             selectedColor: null,
-            hoverColor: null,
             colors: {
-                mo: '#2980b9',
-                fl: '#27ae60',
-                or: '#8e44ad'
+                ak: '#457b9d',
+                az: '#457b9d',
+                ca: '#457b9d',
+                co: '#457b9d',
+                ia: '#457b9d',
+                mo: '#457b9d',
+                mt: '#457b9d',
+                ne: '#457b9d',
+                or: '#457b9d',
+                sd: '#457b9d',
+                ut: '#457b9d',
+                wa: '#457b9d',
+                wi: '#457b9d'
             },
             onRegionClick: function(event, code, region){
                 event.preventDefault();
@@ -99,14 +107,20 @@
     <script>
         jQuery('#vmap_world').vectorMap({
             map: 'world_en',
-            backgroundColor: '#2980b9',
-            color: '#ffffff',
+            backgroundColor: '#ffffff',
+            color: '#ddbea9',
             enableZoom: null,
+            colors: {
+                ca: '#457b9d',
+                us: '#457b9d',
+                be: '#457b9d',
+                fr: '#457b9d'
+            }
+
         });
     </script>
 
     <!-- BootStrap Scripts -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> <!-- TODO: Check if need both jquery -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
