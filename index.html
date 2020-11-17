@@ -13,64 +13,62 @@
 </head>
 
 <body>
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <p> This is where the header content will go!</p>
-            </div>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="./index.html">OurTrips</a>
+                <div class="collapse navbar-collapse" id=Navbar>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
 
-
-    <div class="container">
-        <!-- About Us Section -->
-        <div class="row">
-            <h2 class="col 12">About Us</h2>
-        </div>
-
-        <!-- Visited Stats Section -->
-        <div class="row col-stats">
+    <header>
+        <div class="row row-top">
             <h2 class="col-12">Togeter we visited...</h2>
             <p class="col-12 col-md-4">4 Countries</p>
             <p class="col-12 col-md-4">13 States</p>
             <p class="col-12 col-md-4">6 National Parks</p>
         </div>
+    </header>
 
-        <!-- Maps Section -->
-        <div class="row">
-            <div class="col-12">
-                <div id="vmap"></div>
-            </div>
+    <!-- Maps Section -->
+    <div class="row map-section">
+        <div class="col-12 col-md-6">
+            <div id="vmap"></div>
         </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <div id="vmap_world"></div>
-            </div>
+        <div class="col-12 col-md-6">
+            <div id="vmap_world"></div>
         </div>
-    
     </div>
 
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
+            <footer class="footer">
                 <ul class="list-unstyled">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Trips</a></li>
                     <li><a href="#">Plans</a></li>
-                    <li><a href="#">Reviews</a></li>
                 </ul>            
-            </div>
+            </footer>
         </div>
-    </footer>
-
+    </div>
+</div>
 
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="maps/jquery.vmap.js"></script>
-    
     <!-- US Map Script -->
     <script type="text/javascript" src="maps/jquery.vmap.usa.js"></script>
     <script>
@@ -101,7 +99,6 @@
             }
         });
     </script>
-
     <!-- World Map Script-->
     <script type="text/javascript" src="maps/jquery.vmap.world.js"></script>
     <script>
