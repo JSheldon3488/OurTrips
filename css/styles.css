@@ -1,10 +1,19 @@
-/* Visited Stats Section */
-.col-stats {
-    text-align: center;
+@font-face { font-family: Lemon; src: url('/fonts/LemonJelly.ttf'); } 
+
+body {
+    padding: 65px 0px 0px 0px;
+    z-index: 0;
 }
 
-.col-stats p {
-    font-size: 150%;
+/* NavBar Section */
+.navbar {
+    font-size: 120%;
+    float: right;
+}
+.navbar-brand {
+    font-size: 300%;
+    padding-right: 15px;
+    font-family: Lemon, sans-serif;
 }
 
 /* Map Section */
@@ -18,25 +27,6 @@
     height: 400px;
 }
 
-body {
-    padding: 65px 0px 0px 0px;
-    z-index: 0;
-}
-
-/* NavBar Section */
-.navbar {
-    font-size: 120%;
-}
-.navbar-dark {
-    background-color: #98c1d9;
-    color: #ddbea9;
-
-}
-.navbar-brand {
-    font-size: 150%;
-    padding-right: 15px;
-}
-
 .map-stats {
     text-align: center;
     font-size: 175%
@@ -46,9 +36,12 @@ body {
     margin-bottom: 100px;
 }
 
+
+
 footer {
     margin-top: 50px;
 }
+
 
 
 /* Carousel  */
