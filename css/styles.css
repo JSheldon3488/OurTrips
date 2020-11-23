@@ -37,17 +37,12 @@ body {
     padding-right: 15px;
 }
 
-#homeTop {
-    background-image: url("../images/glacier_moutains.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 200px;
-    color: white;
-    font-size: 200%
+.map-stats {
+    text-align: center;
+    font-size: 175%
 }
-
 .map-section {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 
@@ -55,8 +50,8 @@ footer {
     margin-top: 50px;
 }
 
-/* Carousel  */
 
+/* Carousel  */
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
