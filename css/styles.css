@@ -37,7 +37,7 @@ body {
     padding-right: 15px;
 }
 
-.row-top {
+#homeTop {
     background-image: url("../images/glacier_moutains.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -47,9 +47,58 @@ body {
 }
 
 .map-section {
-    margin-top: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 footer {
     margin-top: 50px;
 }
+
+/* Carousel  */
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+    
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{ 
+        transform: translateX(0);
+    }
+}
+
+
