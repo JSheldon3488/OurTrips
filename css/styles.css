@@ -1,19 +1,48 @@
 @font-face { font-family: Lemon; src: url('/fonts/LemonJelly.ttf'); } 
 
-body {
-    padding: 65px 0px 0px 0px;
-    z-index: 0;
-}
-
 /* NavBar Section */
 .navbar {
     font-size: 120%;
-    float: right;
 }
 .navbar-brand {
-    font-size: 300%;
-    padding-right: 15px;
+    font-size: 325%;
+    margin-left: 30px;
     font-family: Lemon, sans-serif;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 0px 25px;
+    font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #457b9d;
+    font-weight: 775;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link:hover {
+    color: #457b9d;
+    font-weight: 800;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #457b9d;
+    font-weight: 775;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    margin: 25px 0px;
+    padding: 100px;
+}
+.banner h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.banner p {
+    margin-top: 0.5em;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 
 /* Map Section */
@@ -29,15 +58,16 @@ body {
 
 .map-stats {
     text-align: center;
-    font-size: 175%
+    font-size: 175%;
+    margin-bottom: 50px;
 }
 .map-section {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
 
-
+/* Footer Section */
 footer {
     margin-top: 50px;
 }

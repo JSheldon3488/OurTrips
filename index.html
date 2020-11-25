@@ -13,46 +13,57 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <!-- Navbar -->
-    <div class="row">
-        <div class="col-12">
-            <nav class="navbar navbar-light navbar-expand-sm fixed-top">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+    <header> 
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand mr-auto" href="./index.html">OurTrips</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="./index.html">OurTrips</a>
-                <div class="collapse navbar-collapse" id=Navbar>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav ml-md-auto">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Trips</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-    </div>
-
-    <header>
     </header>
 
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>This is a Header!</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia amet 
+                        quia iure excepturi natus deserunt suscipit quidem unde. Impedit distinctio omnis iste ea voluptatum 
+                        labore quasi similique nulla dolorum praesentium!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-    <!-- Maps Section -->
-    <div class="row map-stats">
-        <h2 class="col-12">Together we have visited...</h2>
-        <p class="col-12 col-md-4">4 Countries</p>
-        <p class="col-12 col-md-4">13 States</p>
-        <p class="col-12 col-md-4">6 National Parks</p>
-    </div>
-    </div>
-    <div class="row map-section">
-        <div class="col-12 col-md-6">
-            <div id="vmap"></div>
+    <section class="map-section">
+        <div class="container-fluid">
+            <div class="row map-stats">
+                <h2 class="col-12">Together we have visited...</h2>
+                <p class="col-12 col-md-4">4 Countries</p>
+                <p class="col-12 col-md-4">13 States</p>
+                <p class="col-12 col-md-4">6 National Parks</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div id="vmap"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="vmap_world"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div id="vmap_world"></div>
-        </div>
-    </div>
+    </section>
 
     <!-- Carousel Section -->
     <div class="container-fluid">
@@ -96,18 +107,19 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="container">
-        <div class="row">
-            <footer class="footer">
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Trips</a></li>
-                    <li><a href="#">Plans</a></li>
-                </ul>            
-            </footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <footer class="footer">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trips</a></li>
+                        <li><a href="#">Plans</a></li>
+                    </ul>            
+                </footer>
+            </div>
         </div>
-    </div>
+    </footer>
 </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
