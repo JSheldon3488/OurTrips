@@ -38,7 +38,7 @@
 /* Banner Section */
 .banner {
     position: relative;
-    margin: 100px 50px 150px 100px;
+    margin: 100px 25px 150px 100px;
 }
 .banner h2 {
     font-weight: 500;
@@ -63,6 +63,14 @@
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
     z-index: 100;
+}
+.collage .img1 img {
+    box-shadow: 10px 10px 25px 2px rgba(221,190,169,0.9);
+    border-radius: 10px;
+}
+.collage .img2 img {
+    box-shadow: 5px 10px 25px 2px rgba(221,190,169,0.75);
+    border-radius: 10px;
 }
 
 
@@ -104,6 +112,10 @@ footer .footer-item a{
 
 
 /* Carousel  */
+.carousel .carousel-inner .carousel-item img {
+    border-radius: 50px;
+}
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
