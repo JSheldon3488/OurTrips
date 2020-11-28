@@ -84,6 +84,8 @@
     text-align: center;
     font-size: 175%;
     margin-bottom: 50px;
+    background-color: #98c1d9;
+    padding-top: 15px;
 }
 .map-section {
     margin-top: 50px;
@@ -93,7 +95,14 @@
 
 /* Footer Section */
 footer {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-left: -200px;
+    background-color: #98c1d9;
+    padding: 20px 0px 50px 0px;
+}
+footer .footer-item a{
+    color: #262626;
+    font-size: 115%;
 }
 
 
