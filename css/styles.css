@@ -1,5 +1,9 @@
 @font-face { font-family: Lemon; src: url('/fonts/LemonJelly.ttf'); } 
 
+* {
+    font-family: arial,helvetica;
+}
+
 /* NavBar Section */
 .navbar {
     font-size: 120%;
@@ -29,21 +33,41 @@
 /* Banner Section */
 .banner {
     position: relative;
-    margin: 25px 0px;
-    padding: 100px;
+    margin: 100px 50px 150px 100px;
 }
 .banner h2 {
-    margin: 0;
-    padding: 0;
     font-weight: 500;
 }
 .banner p {
-    margin-top: 0.5em;
-    padding: 0;
     font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.5em;
 }
+.banner .welcome {
+    padding-top: 75px;
+}
+.collage {
+    display: grid;
+    padding-left: 75px;
+}
+.collage .img1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 4;
+    padding-left: 50px;
+    max-width: 100%;
+    height: auto;
+}
+.collage .img2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    z-index: 100;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 992px) {
+    .collage {
+        display: none;
+    }
+}
+
 
 /* Map Section */
 #vmap {
