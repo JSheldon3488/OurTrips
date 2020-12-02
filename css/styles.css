@@ -1,9 +1,9 @@
 @font-face { font-family: Lemon; src: url('/fonts/LemonJelly.ttf'); } 
+@font-face { font-family: Lora; src: url('/fonts/Lora-Medium.ttf');}
 
 * {
-    font-family: arial, helvetica;
+    font-family: 'Lora', serif;
 }
-
 .logo {
     font-family: Lemon, sans-serif;
     font-size: 225%;
@@ -26,10 +26,6 @@
     color: #457b9d;
     font-weight: 775;
 }
-.navbar-light .navbar-nav .nav-item.active .nav-link:hover {
-    color: #457b9d;
-    font-weight: 800;
-}
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
     color: #457b9d;
     font-weight: 775;
@@ -38,13 +34,17 @@
 /* Banner Section */
 .banner {
     position: relative;
-    margin: 100px 25px 150px 100px;
+    margin: 125px 25px 250px 100px;
 }
 .banner h2 {
     font-weight: 500;
 }
 .banner p {
     font-size: 1.2em;
+}
+.banner p a {
+    color: #457b9d;
+    font-weight: 700;
 }
 .banner .welcome {
     padding-top: 25px;
@@ -89,8 +89,10 @@
     text-align: center;
     font-size: 175%;
     margin-bottom: 50px;
-    background-color: #98c1d9;
-    padding-top: 15px;
+    /* background-image: linear-gradient(to bottom right, #457b9d, #9bcdec); */
+    /* background-image: linear-gradient(to bottom right, #457b9d, #ddbea9); */
+    background-image: linear-gradient(to bottom, rgba(69,123,157,0.1),rgb(69,123,157));
+    padding-top: 40px;
 }
 .map-section {
     margin-top: 50px;
@@ -101,7 +103,7 @@
 /* Footer Section */
 footer {
     margin-top: 100px;
-    background-color: #98c1d9;
+    background: rgb(69,123,157);
     padding: 20px 0px 50px 0px;
 }
 footer .footer-item a{
@@ -117,16 +119,35 @@ footer .footer-item a{
 .trip-cards .card {
     max-width: 500px;
     max-height: auto;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.40);
+    transition: all 0.25s ease-in;
+    margin-bottom: 50px;
 }
 .trip-cards .card:hover {
-    transform: scale(1.1); 
+    transform: scale(1.05); 
     background:#fff; 
     box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-
+    transition: all 0.25s ease-in;
 }
-.trip-cards .card .card-body h5 {
+.trip-cards .card .card-body h5 a {
     font-weight: 750;
+    font-size: 125%;    
+    color: #457b9d;
+}
+.trip-cards .card .card-body .btn {  
+    background-color: #457b9d;
+    border: none;
+    font-size: 110%;
+    padding: 6px 12px;
+}
+.trip-cards .card .card-body ul {
+    padding-inline-start: 0px;
+}
+.trip-cards .card .card-body ul li {
+    display: inline;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 110%;
 }
 .trip-cards .card .image-box{
     background: #fff;
