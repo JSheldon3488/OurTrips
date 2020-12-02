@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="maps/jqvmap.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Our Trips</title>
@@ -20,8 +19,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav ml-md-auto">
-                        <li class="nav-item active"><a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="trips.html">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="./trips.html">Trips</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
                     </ul>
                 </div>
@@ -32,41 +31,36 @@
     <section class="banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="welcome col-12 col-lg-6">
-                    <h2>Welcome to<span class="logo">       OurTrips</span></h2>
-                    <p>This is a place for us to keep all of our travel logs, memories, and future travel plans.
-                        <a href="trips.html">Trips</a> is where you can find all of our recent trips,  
-                        <a href="#">Plans</a> is where you can view all of our future plans, 
-                        or just click any state/country to see what we did there.
-                    </p>
-                </div>
-                <div class="collage col-lg-6">
-                    <div class="img1"><img class="img-fluid" src="images/collage-home/narrows-justin-stare.jpg" alt="Collage Photo 1"></div>
-                    <div class="img2"><img class="img-fluid" src="images/collage-home/glacier-bearspray-maddie.jpg" alt="Collage Photo 2"></div>
-                </div>
             </div>
         </div>
     </section>
 
-    
-    <section class="map-section">
-        <div class="container-fluid">
-            <div class="row map-stats">
-                <h2 class="col-12">Together we have visited...</h2>
-                <p class="col-12 col-md-4">4 Countries</p>
-                <p class="col-12 col-md-4">13 States</p>
-                <p class="col-12 col-md-4">6 National Parks</p>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div id="vmap"></div>
+    <section class="trip-cards">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <div class="card">
+                    <div class="image-box">
+                        <img class="card-img-top" src="./images/trips-cards/glacier_moutains.jpg" alt="2018 Road Trip Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">2018 Road Trip</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div id="vmap_world"></div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" src="./images/trips-cards/glacier_moutains.jpg" alt="2018 Road Trip Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Alaska Cruise</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- Carousel Section -->
     <div class="container-fluid">
@@ -127,96 +121,8 @@
     </footer>
 
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="maps/jquery.vmap.js"></script>
-    <!-- US Map Script -->
-    <script src="maps/jquery.vmap.usa.js"></script>
-    <script>
-        jQuery('#vmap').vectorMap({
-            map: 'usa_en',
-            backgroundColor: '#ffffff',
-            color: '#ddbea9',
-            enableZoom: null,
-            showTooltip: true,
-            selectedColor: null,
-            colors: {
-                ak: '#457b9d',
-                az: '#457b9d',
-                ca: '#457b9d',
-                co: '#457b9d',
-                ia: '#457b9d',
-                mo: '#457b9d',
-                mt: '#457b9d',
-                ne: '#457b9d',
-                or: '#457b9d',
-                sd: '#457b9d',
-                ut: '#457b9d',
-                wa: '#457b9d',
-                wi: '#457b9d'
-            },
-            onRegionClick: function(event, code, region){
-                switch(code) {
-                    case "ak":
-                        window.location.replace("trips.html");
-                        break;
-                    case "az":
-                        window.location.replace("index.html");
-                        break;
-                    case "ca":
-                        window.location.replace("index.html");
-                        break;
-                    case "co":
-                        window.location.replace("index.html");
-                        break;
-                    case "ia":
-                        window.location.replace("index.html");
-                        break;
-                    case "mo":
-                        window.location.replace("index.html");
-                        break;
-                    case "mt":
-                        window.location.replace("index.html");
-                        break;
-                    case "ne":
-                        window.location.replace("index.html");
-                        break;
-                    case "or":
-                        window.location.replace("index.html");
-                        break;
-                    case "sd":
-                        window.location.replace("index.html");
-                        break;
-                    case "ut":
-                        window.location.replace("index.html");
-                        break;
-                    case "wa":
-                        window.location.replace("index.html");
-                        break;
-                    case "wi":
-                        window.location.replace("index.html");
-                        break;
-                }
-            }
-        });
-    </script>
-    <!-- World Map Script-->
-    <script src="maps/jquery.vmap.world.js"></script>
-    <script>
-        jQuery('#vmap_world').vectorMap({
-            map: 'world_en',
-            backgroundColor: '#ffffff',
-            color: '#ddbea9',
-            enableZoom: null,
-            colors: {
-                ca: '#457b9d',
-                us: '#457b9d',
-                be: '#457b9d',
-                fr: '#457b9d'
-            }
-
-        });
-    </script>
     <!-- BootStrap Scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
