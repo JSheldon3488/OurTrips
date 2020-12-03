@@ -36,7 +36,7 @@
                     <h2>Welcome to<span class="logo">       OurTrips</span></h2>
                     <p>This is a place for us to keep all of our travel logs, memories, and future travel plans.
                         <a href="trips.html">Trips</a> is where you can find all of our previous trips,  
-                        <a href="#">Plans</a> is where you can view all of our future plans, 
+                        <a href="plans.html">Plans</a> is where you can view all of our future plans, 
                         or just click any state/country to see what we did there.
                     </p>
                 </div>
@@ -131,12 +131,13 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="maps/jquery.vmap.js"></script>
+    
     <!-- US Map Script -->
     <script src="maps/jquery.vmap.usa.js"></script>
     <script>
         jQuery('#vmap').vectorMap({
             map: 'usa_en',
-            backgroundColor: '#f6f9fc',
+            backgroundColor: '#fff',
             color: '#ddbea9',
             enableZoom: null,
             showTooltip: true,
@@ -162,51 +163,52 @@
                         window.location.replace("trips.html");
                         break;
                     case "az":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "ca":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "co":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "ia":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "mo":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "mt":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "ne":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "or":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "sd":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "ut":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "wa":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                     case "wi":
-                        window.location.replace("index.html");
+                        window.location.replace("trips.html");
                         break;
                 }
             }
         });
     </script>
+
     <!-- World Map Script-->
     <script src="maps/jquery.vmap.world.js"></script>
     <script>
         jQuery('#vmap_world').vectorMap({
             map: 'world_en',
-            backgroundColor: '#f6f9fc',
+            backgroundColor: '#fff',
             color: '#ddbea9',
             enableZoom: null,
             colors: {
@@ -214,10 +216,26 @@
                 us: '#457b9d',
                 be: '#457b9d',
                 fr: '#457b9d'
+            },
+            onRegionClick: function(event, code, region){
+                switch(code) {
+                    case "ca":
+                        window.location.replace("trips.html");
+                        break;
+                    case "us":
+                        window.location.replace("trips.html");
+                        break;
+                    case "be":
+                        window.location.replace("trips.html");
+                        break;
+                    case "fr":
+                        window.location.replace("trips.html");
+                        break;
+                }
             }
-
         });
     </script>
+
     <!-- BootStrap Scripts -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
