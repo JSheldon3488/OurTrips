@@ -110,7 +110,7 @@ footer .footer-item a{
 
 /* Trips Cards Section */
 .trip-cards {
-    margin: 75px;
+    margin: 75px 75px 150px 75px;
 }
 .trip-cards .card {
     max-width: 500px;
