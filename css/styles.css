@@ -34,7 +34,7 @@
 /* Banner Section */
 .banner {
     position: relative;
-    margin: 125px 25px 250px 100px;
+    margin: 125px 25px 200px 100px;
 }
 .banner h2 {
     font-weight: 500;
@@ -89,10 +89,6 @@
     text-align: center;
     font-size: 175%;
     margin-bottom: 50px;
-    /* background-image: linear-gradient(to bottom right, #457b9d, #9bcdec); */
-    /* background-image: linear-gradient(to bottom right, #457b9d, #ddbea9); */
-    background-image: linear-gradient(to bottom, rgba(69,123,157,0.1),rgb(69,123,157));
-    padding-top: 40px;
 }
 .map-section {
     margin-top: 50px;
@@ -103,11 +99,11 @@
 /* Footer Section */
 footer {
     margin-top: 100px;
-    background: rgb(69,123,157);
+    background: #1f4468;
     padding: 20px 0px 50px 0px;
 }
 footer .footer-item a{
-    color: #262626;
+    color: #fff;
     font-size: 115%;
 }
 
@@ -154,6 +150,9 @@ footer .footer-item a{
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
     border-radius: 5px;
+}
+.trip-cards .card .card-body .card-buttons a {
+    margin-right: 10px;
 }
 
 
